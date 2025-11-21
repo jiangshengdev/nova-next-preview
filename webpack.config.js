@@ -2,9 +2,11 @@ const path = require('path')
 const { VueLoaderPlugin } = require('vue-loader')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
-module.exports = (env = {}) => ({
-  mode: env.prod ? 'production' : 'development',
-  devtool: env.prod ? 'source-map' : 'cheap-module-eval-source-map',
+module.exports = (env, argv) => {
+  const isProd = argv.mode === 'production'
+  return {
+    mode: isProd ? 'production' : 'development',
+    devtool: isProd ? 'source-map' : 'eval-cheap-source-map',
   entry: path.resolve(__dirname, './src/main.js'),
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -34,13 +36,7 @@ module.exports = (env = {}) => ({
       },
       {
         test: /\.css$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: { hmr: !env.prod },
-          },
-          'css-loader',
-        ],
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
     ],
   },
@@ -51,10 +47,13 @@ module.exports = (env = {}) => ({
     }),
   ],
   devServer: {
-    inline: true,
     hot: true,
-    stats: 'minimal',
-    contentBase: __dirname,
-    overlay: true,
+    static: {
+      directory: __dirname,
+    },
+    client: {
+      overlay: true,
+    },
   },
-})
+}
+}
