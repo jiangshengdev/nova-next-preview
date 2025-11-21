@@ -39,20 +39,20 @@
   dependencies:
     "@isaacs/balanced-match" "^4.0.1"
 
-"@jiangshengdev/material-design-icons-vue-next@^1.0.0-alpha.6":
-  version "1.0.0-alpha.6"
-  resolved "https://registry.npmjs.org/@jiangshengdev/material-design-icons-vue-next/-/material-design-icons-vue-next-1.0.0-alpha.6.tgz#06cdaa0edc747270595957e30682c301536416e6"
-  integrity sha512-yEVE6svAkmNH/UpSaW2Y8ynCT8a/lt5rvuwpKKk0aWy4miafxE5DtBYQZC42oYbcl665rq+e0BnOhr/wR5H6bg==
+"@jiangshengdev/material-design-icons-vue-next@^1.0.0-alpha.8":
+  version "1.0.0-alpha.8"
+  resolved "https://registry.npmjs.org/@jiangshengdev/material-design-icons-vue-next/-/material-design-icons-vue-next-1.0.0-alpha.8.tgz#bb8432a8e683432e79cb4c8f1028889ab14ce65b"
+  integrity sha512-V3z/t/JWa5u+O+6bgNEbzPy7NbacsjSCtof6rmXJCUsbWmd1fiMPNs+ucseZ7F9XAh2viq0/40mgDIn6U3KxKA==
   dependencies:
-    vue "^3.0.4"
+    vue "^3.5.24"
 
-"@jiangshengdev/nova-next@^2.0.0-alpha.27":
-  version "2.0.0-alpha.27"
-  resolved "https://registry.npmjs.org/@jiangshengdev/nova-next/-/nova-next-2.0.0-alpha.27.tgz#512ff5ae0af33ac86a8ca12af3d87095027ecd7d"
-  integrity sha512-XFL3DRoFbRy/Jv5ansXCOnRpgAgxipsG8WoFVAz9B74OBsSdP7dgaICHA/W5JkUDdbpYwyVDbcChusHyFsHsUQ==
+"@jiangshengdev/nova-next@^2.0.0-alpha.28":
+  version "2.0.0-alpha.28"
+  resolved "https://registry.npmjs.org/@jiangshengdev/nova-next/-/nova-next-2.0.0-alpha.28.tgz#56e427f95135cc8022096d195a01c18cf81a33b9"
+  integrity sha512-jSfdmn8V72Z5emE3t0qmXj9knVpDrfNtfSbMgjjm2+RSuVxgmOMDIxNfQoYidytSXbZ9kfKtqvb62GTZQPopgQ==
   dependencies:
-    "@jiangshengdev/material-design-icons-vue-next" "^1.0.0-alpha.6"
-    vue "^3.0.7"
+    "@jiangshengdev/material-design-icons-vue-next" "^1.0.0-alpha.8"
+    vue "^3.5.0"
 
 "@jridgewell/sourcemap-codec@^1.5.5":
   version "1.5.5"
@@ -4194,7 +4194,7 @@ vue-loader@^16.0.0-beta.4:
     hash-sum "^2.0.0"
     loader-utils "^2.0.0"
 
-vue@^3.0.0-rc.4, vue@^3.0.4, vue@^3.0.7:
+vue@^3.0.0-rc.4, vue@^3.5.0, vue@^3.5.24:
   version "3.5.24"
   resolved "https://registry.npmjs.org/vue/-/vue-3.5.24.tgz#1b93af349faa064f46e70ac5b0caaa3d0952bbf3"
   integrity sha512-uTHDOpVQTMjcGgrqFPSb8iO2m1DUvo+WbGqoXQz8Y1CeBYQ0FXf2z1gLRaBtHjlRz7zZUBHxjVB5VTLzYkvftg==
