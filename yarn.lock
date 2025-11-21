@@ -39,19 +39,19 @@
   dependencies:
     "@isaacs/balanced-match" "^4.0.1"
 
-"@jiangshengdev/material-design-icons-vue-next@^1.0.0-alpha.8":
-  version "1.0.0-alpha.8"
-  resolved "https://registry.npmjs.org/@jiangshengdev/material-design-icons-vue-next/-/material-design-icons-vue-next-1.0.0-alpha.8.tgz#bb8432a8e683432e79cb4c8f1028889ab14ce65b"
-  integrity sha512-V3z/t/JWa5u+O+6bgNEbzPy7NbacsjSCtof6rmXJCUsbWmd1fiMPNs+ucseZ7F9XAh2viq0/40mgDIn6U3KxKA==
+"@jiangshengdev/material-design-icons-vue-next@^1.0.0-alpha.9":
+  version "1.0.0-alpha.9"
+  resolved "https://registry.npmjs.org/@jiangshengdev/material-design-icons-vue-next/-/material-design-icons-vue-next-1.0.0-alpha.9.tgz#834293a121088741005fcc07771a1263c473e2be"
+  integrity sha512-gAi0UjdohAZMzJqsy2SCW6CtK1XThlZYE6rzb0xnUPtxgChukcWX1W5ZpazyYmxwHWY643+C22VIgT9o8JD/pA==
   dependencies:
     vue "^3.5.24"
 
-"@jiangshengdev/nova-next@^2.0.0-alpha.28":
-  version "2.0.0-alpha.28"
-  resolved "https://registry.npmjs.org/@jiangshengdev/nova-next/-/nova-next-2.0.0-alpha.28.tgz#56e427f95135cc8022096d195a01c18cf81a33b9"
-  integrity sha512-jSfdmn8V72Z5emE3t0qmXj9knVpDrfNtfSbMgjjm2+RSuVxgmOMDIxNfQoYidytSXbZ9kfKtqvb62GTZQPopgQ==
+"@jiangshengdev/nova-next@^2.0.0-alpha.29":
+  version "2.0.0-alpha.29"
+  resolved "https://registry.npmjs.org/@jiangshengdev/nova-next/-/nova-next-2.0.0-alpha.29.tgz#c584785bf9027240f21adea9f1f75302ee784fac"
+  integrity sha512-vQ5MAmclvI0+MieG781GyW6cu5DeEbTPoHUTK5uCq3UNqEEQ35P81PmGdIKCmKzD0Qc6ybgKFj3bJpYnb9ihyg==
   dependencies:
-    "@jiangshengdev/material-design-icons-vue-next" "^1.0.0-alpha.8"
+    "@jiangshengdev/material-design-icons-vue-next" "^1.0.0-alpha.9"
     vue "^3.5.0"
 
 "@jridgewell/sourcemap-codec@^1.5.5":
