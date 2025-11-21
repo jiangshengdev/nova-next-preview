@@ -6,7 +6,7 @@ module.exports = (env, argv) => {
   const isProd = argv.mode === 'production'
   return {
     mode: isProd ? 'production' : 'development',
-    devtool: isProd ? 'source-map' : 'eval-cheap-module-source-map',
+    devtool: isProd ? 'source-map' : 'eval-cheap-source-map',
   entry: path.resolve(__dirname, './src/main.js'),
   output: {
     path: path.resolve(__dirname, './dist'),
