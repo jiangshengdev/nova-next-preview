@@ -7,53 +7,53 @@ module.exports = (env, argv) => {
   return {
     mode: isProd ? 'production' : 'development',
     devtool: isProd ? 'source-map' : 'eval-cheap-source-map',
-  entry: path.resolve(__dirname, './src/main.js'),
-  output: {
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
-  },
-  resolve: {
-    alias: {
-      // this isn't technically needed, since the default `vue` entry for bundlers
-      // is a simple `export * from '@vue/runtime-dom`. However having this
-      // extra re-export somehow causes webpack to always invalidate the module
-      // on the first HMR update and causes the page to reload.
-      vue: '@vue/runtime-dom',
+    entry: path.resolve(__dirname, './src/main.js'),
+    output: {
+      path: path.resolve(__dirname, './dist'),
+      publicPath: '/dist/',
     },
-  },
-  module: {
-    rules: [
-      {
-        test: /\.vue$/,
-        use: 'vue-loader',
+    resolve: {
+      alias: {
+        // this isn't technically needed, since the default `vue` entry for bundlers
+        // is a simple `export * from '@vue/runtime-dom`. However having this
+        // extra re-export somehow causes webpack to always invalidate the module
+        // on the first HMR update and causes the page to reload.
+        vue: '@vue/runtime-dom',
       },
-      {
-        test: /\.png$/,
-        use: {
-          loader: 'url-loader',
-          options: { limit: 8192 },
+    },
+    module: {
+      rules: [
+        {
+          test: /\.vue$/,
+          use: 'vue-loader',
         },
-      },
-      {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
-      },
+        {
+          test: /\.png$/,
+          use: {
+            loader: 'url-loader',
+            options: { limit: 8192 },
+          },
+        },
+        {
+          test: /\.css$/,
+          use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        },
+      ],
+    },
+    plugins: [
+      new VueLoaderPlugin(),
+      new MiniCssExtractPlugin({
+        filename: '[name].css',
+      }),
     ],
-  },
-  plugins: [
-    new VueLoaderPlugin(),
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-    }),
-  ],
-  devServer: {
-    hot: true,
-    static: {
-      directory: __dirname,
+    devServer: {
+      hot: true,
+      static: {
+        directory: __dirname,
+      },
+      client: {
+        overlay: true,
+      },
     },
-    client: {
-      overlay: true,
-    },
-  },
-}
+  }
 }
