@@ -1,5 +1,5 @@
 {
-  "author": "em2046",
+  "author": "jiangshengdev",
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server",
@@ -7,7 +7,7 @@
     "build": "webpack --env.prod"
   },
   "dependencies": {
-    "@em2046/nova-next": "^2.0.0-alpha.23",
+    "@jiangshengdev/nova-next": "^2.0.0-alpha.27",
     "vue": "^3.0.0-rc.4"
   },
   "devDependencies": {

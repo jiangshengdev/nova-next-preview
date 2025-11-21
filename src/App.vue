@@ -10,10 +10,10 @@
 
 <script>
 import { reactive } from 'vue'
-import { NovaColorPicker } from '@em2046/nova-next'
-import '@em2046/nova-next/dist/css/themes.css'
-import '@em2046/nova-next/dist/css/dropdown.css'
-import '@em2046/nova-next/dist/css/color-picker.css'
+import { NovaColorPicker } from '@jiangshengdev/nova-next'
+import '@jiangshengdev/nova-next/dist/css/themes.css'
+import '@jiangshengdev/nova-next/dist/css/dropdown.css'
+import '@jiangshengdev/nova-next/dist/css/color-picker.css'
 
 const preset = [
   '#dc143c',
