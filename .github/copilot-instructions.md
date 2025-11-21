@@ -2,8 +2,8 @@
 
 ## 技术栈与布局
 
-- Vue 3 RC（`@vue/runtime-dom`）应用，入口固定在 `src/main.js`，根组件为 `src/App.vue`。
-- Webpack 4 + `vue-loader` + `MiniCssExtractPlugin` 负责编译，最终将 CSS 输出到 `dist/main.css` 并在 `index.html` 引用。
+- Vue 3.5（`@vue/runtime-dom`）应用，入口固定在 `src/main.js`，根组件为 `src/App.vue`。
+- Webpack 5 + `vue-loader` + `MiniCssExtractPlugin` 负责编译，最终将 CSS 输出到 `dist/main.css` 并在 `index.html` 引用。
 - UI 主要演示 `@jiangshengdev/nova-next` 提供的 `NovaColorPicker`，没有 Vue Router 或全局状态库。
 
 ## 外部依赖与资源
@@ -14,9 +14,9 @@
 
 ## 构建与运行
 
-- 安装依赖：`npm install`（仓库无 lockfile，保持 npm）。
-- 开发预览：`npm run dev` 使用 `webpack-dev-server` 从仓库根目录服务 `/dist/main.js`，带 HMR 与报错遮罩。
-- 生产构建：`npm run build` 等同 `webpack --env.prod`，开启 `mode: "production"`、source map，并关闭 CSS HMR。
+- 安装依赖：`npm install`（使用 package-lock.json）。
+- 开发预览：`npm run dev` 使用 `webpack serve` 从仓库根目录服务 `/dist/main.js`，带 HMR 与报错遮罩。
+- 生产构建：`npm run build` 等同 `webpack --mode production`，开启 `mode: "production"` 与 source map。
 - 代码格式化：`npm run prettier` 只覆盖 `src/**/*.{js,vue}`，提交 UI 变更前务必运行。
 
 ## 编码模式
@@ -30,7 +30,8 @@
 
 - 入口仅限 `src/main.js`，如需额外 bundle 同步修改 `webpack.config.js` 与 `index.html`。
 - CSS loader 顺序为 `[MiniCssExtractPlugin.loader, css-loader]`；若引入预处理器，在数组末尾追加而不是替换现有步骤。
-- Dev server 通过 `contentBase: __dirname` 提供静态文件，请将生成产物放在 `dist/`，避免触发额外配置。
+- Dev server 通过 `static.directory: __dirname` 提供静态文件，请将生成产物放在 `dist/`，避免触发额外配置。
+- Webpack 配置使用 `(env, argv)` 参数，通过 `argv.mode` 判断生产/开发环境。
 
 ## 测试与文档
 
