@@ -61,7 +61,7 @@ const resetNickname = () => {
         <p class="nova-demo-hint">通过 NovaColorPicker 自定义强调色，并实时展示结果。</p>
 
         <div class="nova-demo-color-picker">
-          <NovaColorPicker v-model:value="accentColor" :alpha="true" :preset="presetColors" />
+          <NovaColorPicker v-model="accentColor" :alpha="true" :preset="presetColors" />
         </div>
 
         <div class="nova-demo-accent-preview">
