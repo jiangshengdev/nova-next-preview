@@ -20,7 +20,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@jiangshengdev/nova-next": "3.0.0-alpha.1",
+    "@jiangshengdev/nova-next": "3.0.0-alpha.2",
     "pinia": "^3.0.3",
     "vue": "^3.5.22",
     "vue-router": "^4.6.3"
