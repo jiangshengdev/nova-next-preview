@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@jiangshengdev/nova-next':
-        specifier: 3.0.0-alpha.2
-        version: 3.0.0-alpha.2(typescript@5.9.3)
+        specifier: 3.0.0-alpha.5
+        version: 3.0.0-alpha.5(typescript@5.9.3)
       pinia:
         specifier: ^3.0.3
         version: 3.0.4(typescript@5.9.3)(vue@3.5.25(typescript@5.9.3))
@@ -509,11 +509,12 @@ packages:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
 
-  '@jiangshengdev/material-design-icons-vue-next@1.0.0-alpha.9':
-    resolution: {integrity: sha512-gAi0UjdohAZMzJqsy2SCW6CtK1XThlZYE6rzb0xnUPtxgChukcWX1W5ZpazyYmxwHWY643+C22VIgT9o8JD/pA==}
+  '@jiangshengdev/material-design-icons-vue-next@2.0.0-alpha.1':
+    resolution: {integrity: sha512-yPj/FNHu1WV8s1Kyt2rx1SX4ju3Wj7jqwRDoPXQhdDER66hss4PAR1K0PkIEN7VrVPKxEF4po1TA0Tqcs6R0Ug==}
+    engines: {node: ^20.19.0 || >=22.12.0}
 
-  '@jiangshengdev/nova-next@3.0.0-alpha.2':
-    resolution: {integrity: sha512-qIvJmT5yrGEG23d9iXsfQAy1gXGQnuCJ+6wlBGgKKZKXMQhnO4b+d0kUvYd9ujCuLJfiUvB0iNJfYGQCGAES4Q==}
+  '@jiangshengdev/nova-next@3.0.0-alpha.5':
+    resolution: {integrity: sha512-AVs79DncK7dmUQSmrL9Aoc6W1RYUasB2voJzgl8o6eEC68/DkOgFm5LrGrlW1F155jtWiyJ7Tilsg6XCXDYuNg==}
     engines: {node: ^20.19.0 || >=22.12.0}
 
   '@jridgewell/gen-mapping@0.3.13':
@@ -2937,15 +2938,17 @@ snapshots:
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: wrap-ansi@7.0.0
 
-  '@jiangshengdev/material-design-icons-vue-next@1.0.0-alpha.9(typescript@5.9.3)':
+  '@jiangshengdev/material-design-icons-vue-next@2.0.0-alpha.1(typescript@5.9.3)':
     dependencies:
+      pinia: 3.0.4(typescript@5.9.3)(vue@3.5.25(typescript@5.9.3))
       vue: 3.5.25(typescript@5.9.3)
+      vue-router: 4.6.3(vue@3.5.25(typescript@5.9.3))
     transitivePeerDependencies:
       - typescript
 
-  '@jiangshengdev/nova-next@3.0.0-alpha.2(typescript@5.9.3)':
+  '@jiangshengdev/nova-next@3.0.0-alpha.5(typescript@5.9.3)':
     dependencies:
-      '@jiangshengdev/material-design-icons-vue-next': 1.0.0-alpha.9(typescript@5.9.3)
+      '@jiangshengdev/material-design-icons-vue-next': 2.0.0-alpha.1(typescript@5.9.3)
       vue: 3.5.25(typescript@5.9.3)
     transitivePeerDependencies:
       - typescript
